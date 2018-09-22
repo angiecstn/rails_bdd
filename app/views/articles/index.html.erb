@@ -1,4 +1,22 @@
 <% @articles.each do |article| %>
-  <p><%= article.title %></p>
-  <p><%= article.content %></p>
+  <p><%= article.title %></p> 
+  <p><%= article.content %></p> 
+<% end %>
+
+
+
+<%= form_for Article.new do |form| %> 
+  <p>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+  </p>
+ 
+  <p>
+    <%= form.label :content %><br>
+    <%= form.text_area :content %>
+  </p>
+ 
+  <p>
+    <%= form.submit %>
+  </p>
 <% end %>

@@ -1,22 +1,22 @@
-<% @articles.each do |article| %>
-  <p><%= article.title %></p> 
-  <p><%= article.content %></p> 
-<% end %>
 
 
-
-<%= form_for Article.new do |form| %> 
-  <p>
-    <%= form.label :title %><br>
-    <%= form.text_field :title %>
-  </p>
+<h1>Listing articles</h1>
  
-  <p>
-    <%= form.label :content %><br>
-    <%= form.text_area :content %>
-  </p>
+<%= link_to 'New article', new_article_path %>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Content</th>
+    <th></th>
+  </tr>
  
-  <p>
-    <%= form.submit %>
-  </p>
-<% end %>
+  <% @articles.each do |article| %>
+    <tr>
+      <td><%= article.title %></td>
+      <td><%= article.content %></td>
+      <td><%= link_to 'Show', article_path(article) %></td>
+    </tr>
+  <% end %>
+</table>
+

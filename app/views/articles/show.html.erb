@@ -19,6 +19,10 @@
     <strong>Comment:</strong>
     <%= comment.body %>
   </p>
+  <%= link_to 'Destroy Comment', [comment.article, comment],
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %>
+
 <% end %>
 
 <h2>Add a comment:</h2>
@@ -26,6 +30,10 @@
   <p>
     <%= form.label :commenter %><br>
     <%= form.text_field :commenter %>
+  </p>
+  <p>
+    <%= form.label :email %><br>
+    <%= form.text_area :email %>
   </p>
   <p>
     <%= form.label :body %><br>

@@ -13,9 +13,10 @@ Scenario: Happy path leaving a comment
  When I click the link "Show" 
  And show me the page
  Then I am on the article page
- And I fill in the "Commenter" with "Me"
+ And I fill in the "Commenter" with "Abcabc"
+ And I fill in "Email" with "abc@abc.com"
  And I fill in the "Write your comment here" with "That was crap!"
  And I click on the link "Save Comment"
 
- 
+
 

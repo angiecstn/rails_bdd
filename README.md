@@ -1,24 +1,29 @@
-# README
+ACCEPTANCE UNIT-TEST CYCLE WITH RAILS
 
-This README would normally document whatever steps are necessary to get the
-application up and running.s
+Simple Rails Blog Application with acceptance & unit tests (outside-in development)
 
-Things you may want to cover:
+__________________________________
+Getting Started
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-* Ruby version
+___________________________________
+Prerequisites
+Rails 
+Postgres
+(for testing):
+Cucumber
+Capybara
+Rspec
 
-* System dependencies
+__________________________________
+Built With
+Dropwizard - The web framework used
+Maven - Dependency Management
+ROME - Used to generate RSS Feeds
+Contributing
+Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+__________________________________
+Authors
+Angelica Costantini
+Albert Stjärne

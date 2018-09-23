@@ -19,4 +19,9 @@ Scenario: Happy path leaving a comment
  And I click on the link "Save Comment"
 
 
-
+Scenario: Sad path leaving a comment
+ Given I am on the landing page
+ When I click the link "Show" 
+ Then I am on the article page
+ And I fill in "Email" with "abc@abc"
+ And I should get redirected to the article page 

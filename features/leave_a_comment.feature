@@ -10,18 +10,18 @@ Background:
 
 Scenario: Happy path leaving a comment
  Given I am on the landing page
- When I click the link "Show" 
  And show me the page
+ When I click on the link "Show" 
  Then I am on the article page
- And I fill in the "Commenter" with "Abcabc"
- And I fill in "Email" with "abc@abc.com"
- And I fill in the "Write your comment here" with "That was crap!"
+ And I fill in "Body" with "Abcabc"
+ And I fill in "comment_commenter" with "abc@abc.com"
+ And I fill in "Write your comment here" with "That was crap!"
  And I click on the link "Save Comment"
 
 
 Scenario: Sad path leaving a comment
  Given I am on the landing page
- When I click the link "Show" 
+ When I click on the link "Show" 
  Then I am on the article page
- And I fill in "Email" with "abc@abc"
+ And I fill in "Commenter" with "abc@abc"
  And I should get redirected to the article page 

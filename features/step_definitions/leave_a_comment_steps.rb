@@ -10,12 +10,8 @@ When("show me the page") do
   save_and_open_page
 end
 
-Then("I am on the article page") do
-  visit articles_path 
-end
-
-Then("I fill in the {string} with {string}") do |field, content|
-  fill_in field, with: content 
+Then("I should get redirected to the article page") do
+  visit articles_path
 end
 
 Then("I fill in {string} with {string}") do |field, content|

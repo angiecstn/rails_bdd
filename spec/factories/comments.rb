@@ -1,9 +1,7 @@
 FactoryBot.define do
   factory :comment do
-    commenter { "Abc" }
-    email { "abc@abc.com" }
+    commenter { "abc@abc.com" }
     body { "That was crap!" }
     article { FactoryBot.create(:article) }
-
   end
 end

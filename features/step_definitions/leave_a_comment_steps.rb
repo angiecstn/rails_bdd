@@ -11,7 +11,7 @@ When("show me the page") do
 end
 
 Then("I should get redirected to the article page") do
-  visit articles_path
+  visit article_path
 end
 
 Then("I fill in {string} with {string}") do |field, content|
